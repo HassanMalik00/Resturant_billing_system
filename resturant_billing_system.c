@@ -40,7 +40,7 @@ void showMenu() {
 	int i;
     printf("----- Menu -----\n");
     for ( i = 0; i < sizeof(menu) / sizeof(menu[0]); i++) {
-        printf("%d. %s - $%.2f\n",  menu[i].name, menu[i].price);
+        printf("%d. %s - $%.2f\n", i + 1, menu[i].name, menu[i].price);
     }
     printf("----------------\n");
 }
